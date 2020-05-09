@@ -1,0 +1,5 @@
+@import './variables.scss';
+
+@function weight($weight-name) {
+    @return map($font-weights, $weight-name);
+}
