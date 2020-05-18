@@ -1,0 +1,26 @@
+.beaconLogo {
+    position: absolute;
+    top: 12rem;
+    left: 8rem;
+    
+    img {
+        position: absolute;
+        width: 200px;
+        height: 280px;
+        z-index: 100;
+    }
+
+    #{&}__shadow {
+        color: transparent;
+        z-index: 10;
+        width: 11rem;
+        height: 11rem;
+        border-radius: 50%;
+        box-shadow: 1rem 7rem 1rem #2c2828a4;
+        transform: skew(0, -10deg)
+    }
+}
+
+.reflected {
+    transform: scale(-1, 1);
+}

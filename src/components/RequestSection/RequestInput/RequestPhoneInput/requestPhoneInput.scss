@@ -1,0 +1,50 @@
+@import '../../../../variables.scss';
+
+@mixin phoneInputBorder {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.requestPhoneInput {
+
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+
+    
+    .flag-dropdown {
+        width: 2rem;
+        height: 3rem;
+        opacity: .8;
+        margin: .7rem 0 !important;
+        @include phoneInputBorder;
+
+        &.open {
+            @include phoneInputBorder;
+        }
+
+        .selected-flag {
+            @include phoneInputBorder;
+            width: 2rem;
+
+            &.open {
+                @include phoneInputBorder;
+            }
+        }
+    }
+
+
+    input {
+        &.form-control {
+            color: $text-color;
+            width: 100%;
+            height: 3rem;
+            font-size: 1.4rem;
+            margin: .7rem 0 !important;
+            padding: .5rem 2rem;
+            opacity: .6;
+            border: 3px solid $secondary-color;
+            border-radius: 2rem;
+        }
+    }
+}

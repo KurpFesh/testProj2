@@ -1,0 +1,36 @@
+@import '../../../variables.scss';
+@import '../../../index.scss';
+@import '../requestSection.scss';
+
+.requestNextButton  {
+    margin: 1rem auto;
+    
+    button{
+        padding: 1rem 3rem;
+        color: $primary-color;
+        background-color: $secondary-color;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 2rem;
+        @include requestSectionShadow(#1c8d54ab);
+    
+        transition: 1s;
+    
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        &.disabled {
+            transform: none;
+            cursor: not-allowed;
+            background-color: $secondary-color;
+            color: $error-color;
+            border-color: $error-color;
+            opacity: .6;
+            @include requestSectionShadow(rgba(139, 0, 0, 0.432));
+        }
+    }
+    
+}

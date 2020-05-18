@@ -1,0 +1,85 @@
+@import '../../index.scss';
+@import '../../variables.scss';
+
+@mixin footerText {
+    position: relative;
+    text-align: center;
+    color: $secondary-color;
+    z-index: 12;
+}
+
+.footer {
+    position: relative;
+    background: url(./footerBg.png) no-repeat;
+    background-size: cover;
+    height: 20rem;
+
+    &__image {
+        position: absolute;
+        bottom:0;
+        height: 25rem;
+        z-index: 11;
+    }
+
+    &__phone {
+        text-transform: uppercase;
+        padding-top: 2rem;
+        @include footerText;
+    }
+
+    &__mail {
+        
+        padding: .5rem;
+        font-size: 1.4rem;
+        @include footerText;
+        
+    }
+
+    &__socials {
+        position: relative;
+        @include flex(row);
+        justify-content: center;
+        margin: 0 auto;
+        z-index: 12;
+    }
+
+    &__links {
+        position: relative;
+        @include flex(row);
+        justify-content: center;
+        margin: 0 auto;
+        z-index: 12;
+
+        a {
+            margin: 1rem;
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 1.3rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__rights {
+        position: relative;
+        text-align: center;
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-weight: bold;
+        z-index: 12;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .footer {
+        &__image {
+            display: none;
+        }
+        .circle {
+            display: none;
+        }
+    }
+}

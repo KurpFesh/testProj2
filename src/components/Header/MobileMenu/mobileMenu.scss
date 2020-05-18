@@ -1,0 +1,22 @@
+@import '../../../variables.scss';
+
+.mobileMenu {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: $secondary-color;
+    box-shadow: 0 0 .5rem #aaa;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    z-index: 100;
+}
+
+@media screen and (min-width:600px) {
+    .mobileMenu {
+        display: none;
+    }
+}

@@ -1,5 +1,21 @@
+@import './reset.scss';
 @import './variables.scss';
 
-@function weight($weight-name) {
-    @return map($font-weights, $weight-name);
+@function getWeight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin section {
+    width: 100%;
+    position: relative;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+.container {
+    width: 85vw;
+    margin: 0 auto;
 }

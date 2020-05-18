@@ -1,0 +1,50 @@
+@import '../../../../variables.scss';
+@import '../../../../index.scss';
+
+@mixin navButtonSelected {
+    background-color: $secondary-color;
+    color: $primary-color;
+    box-shadow: 0 0 20px rgba(204, 204, 204, 0.5);
+
+    a {
+        color: $primary-color;
+    }
+}
+
+.navbutton {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: $secondary-color;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-family: serif;
+    font-weight: getWeight(large);    
+
+    a {
+        text-decoration: none;
+        color: $secondary-color;        
+    }
+
+    &.selected {
+        @include navButtonSelected;
+        
+        &:hover { 
+            animation: none;
+        }
+    }
+
+    &:hover {
+        @include navButtonSelected;
+        transition: .5s;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .navbutton {
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+    }
+}

@@ -1,12 +1,18 @@
 $primary-color: #43cb83;
 $secondary-color: #fff;
+$error-color: darkred;
 $offer-primary-color: #ff9000;
 $offer-secondary-color: #284e62;
 $text-color: #282828;
 $price-color: #515461;
+$border-color:#ddd;
+
+$main-background-image: url(../../images/main-bgi.png) no-repeat;
+$mock-background-image: url(../../images/mock-bgi.png) no-repeat;
 
 $font-weights: (
     "regular": 400,
     "bold": 700,
     "large": 900
 );
+

@@ -1,0 +1,43 @@
+@import '../../../../variables.scss';
+
+.productCounter {
+
+    position: relative;
+
+    &__amountChanger {
+        padding: .2rem .5rem;
+        background-color: $secondary-color;
+        border: 2px solid $border-color;
+        font-size: .9rem;
+    }
+
+    &__decreaser {
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        border-right: none;
+    }
+
+    &__increaser {
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        border-left: none;
+    }
+
+    &__amount {
+        width: 3rem;
+        padding: .2rem 1rem;
+        border: 2px solid $border-color;
+    }
+
+    &__amountEditor {
+        padding: .2rem 0;
+        max-width: 3rem;
+        border: 2px solid $border-color;
+        text-align: center;
+    }
+
+    &__amountText {
+        position: absolute;
+        padding: .2rem .5rem;
+    }
+}

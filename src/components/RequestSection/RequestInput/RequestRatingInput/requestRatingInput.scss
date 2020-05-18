@@ -1,0 +1,7 @@
+@import '../../../../index.scss';
+
+.requestRatingInput {
+    @include flex(row);
+    justify-content: space-between;
+    margin: 0 auto;
+}

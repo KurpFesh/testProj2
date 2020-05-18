@@ -1,0 +1,4 @@
+export const REQUEST_TEXT_TYPE = 'request/REQUEST_TEXT_TYPE';
+export const REQUEST_EMAIL_TYPE = 'request/REQUEST_EMAIL_TYPE';
+export const REQUEST_PHONE_TYPE = 'request/REQUEST_PHONE_TYPE';
+export const REQUEST_RATING_TYPE = 'request/REQUEST_RATING_TYPE';
